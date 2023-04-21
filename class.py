@@ -6,9 +6,9 @@ class Flights:
         self.duration = duration
 
     def print_info(self):
-        print(f"Flight origin: f{self.origin}")
-        print(f"Flight destination: f{self.destination}")
-        print(f"Flight duration: f{self.duration}")
+        print(f"Flight origin: {self.origin}")
+        print(f"Flight destination: {self.destination}")
+        print(f"Flight duration: {self.duration}")
 
 
 def main():
@@ -16,13 +16,13 @@ def main():
     #create Flight
     flight1 = Flights(origin='New York', destination='Paris', duration=540)
 
+    flight2 = Flights(origin="Yae", destination="Yangon", duration=900)
+
     flight1.duration = 550
 
-    print(flight1.origin)
-    print(flight1.destination)
-    print(flight1.duration)
-
     flight1.print_info()
+
+    flight2.print_info()
 
 
 if __name__ == "__main__":

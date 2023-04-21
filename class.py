@@ -5,6 +5,11 @@ class Flights:
         self.destination = destination
         self.duration = duration
 
+    def print_info(self):
+        print(f"Flight origin: f{self.origin}")
+        print(f"Flight destination: f{self.destination}")
+        print(f"Flight duration: f{self.duration}")
+
 
 def main():
 
@@ -16,6 +21,8 @@ def main():
     print(flight1.origin)
     print(flight1.destination)
     print(flight1.duration)
+
+    flight1.print_info()
 
 
 if __name__ == "__main__":
